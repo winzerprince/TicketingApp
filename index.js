@@ -1,5 +1,6 @@
 
     const express = require('express');
+const sql = require('sql2');
 const genres = require('./routes/genres');
     const customers = require('./routes/customers');
     const home = require('./routes/home');
