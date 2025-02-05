@@ -3,8 +3,7 @@ const router = express.Router();
 const Joi = require('joi');
 const mongoose = require('mongoose');
 
-
-
+//Generates a mongodb schema
 const genreSchema = new mongoose.Schema({
     name: {
         type: String,

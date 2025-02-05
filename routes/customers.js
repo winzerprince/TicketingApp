@@ -3,6 +3,7 @@ const Joi = require('joi');
 const router = express.Router();
 const mongoose = require('mongoose');
 
+//Creates a customer schema 
 const customerSchema = new mongoose.Schema({
     name: { type: String, required: true, maxlength: 255 },
     premium: Boolean,
@@ -12,8 +13,10 @@ const customerSchema = new mongoose.Schema({
     
 })
 
+// Create collection named customers
 const Customer = mongoose.model('Customer', customerSchema);
 
+//Restfull api implementation 
 router.get('/:id', async (req, res) => {
     const customer = await Customer.findById(req.params.id);
     res.send(customer);
@@ -58,6 +61,8 @@ router.delete('/:id', async (req, res) => {
     if (!customer) console.log('Customer with id ' + req.params.id + " was not found");
     res.send(customer);
 })
+
+// Validation function
 
 function inputValidate(input, res) {
     const schema = Joi.object({
