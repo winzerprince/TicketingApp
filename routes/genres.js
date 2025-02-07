@@ -86,14 +86,6 @@ async function deleteGenre(id) {
 
 
 
-//Array of genres
-/*const genres = [
-    { id: 1, name: 'Adventure' },
-    { id: 2, name: 'Action' },
-    { id: 3, name: 'Horror' },
-    { id: 4, name: 'Comedy' },
-
-];*/
 
 
 // Get request
