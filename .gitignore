@@ -1,5 +1,3 @@
 node_modules/
-async.js
-tempCodeRunnerFile.js
-promise.js
-example200.js
+*tempCodeRunnerFile*
+
