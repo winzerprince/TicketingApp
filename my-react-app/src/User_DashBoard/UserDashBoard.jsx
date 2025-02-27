@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "./UserDashBoard.css";
 
 function UserDashBoard() {
   const navigate = useNavigate();

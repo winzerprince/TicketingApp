@@ -1,0 +1,57 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(8, 4, 31);
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 10em;
+  margin-top: -100px;
+  background: linear-gradient(to right, cyan, purple, pink);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+a:hover {
+  font-size: 1.6em;
+  color: aqua;
+}
+
+button:hover {
+  font-weight: bolder;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2,
+p {
+  color: beige;
+}
+
+.get-tickets-btn {
+  width: 10em;
+  height: 3em;
+  font-size: larger;
+  border-radius: 30px;
+  color: aliceblue;
+  background-color: blue;
+}
