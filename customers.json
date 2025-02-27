@@ -1,0 +1,13 @@
+[
+    {"name": "Billy Butcher",
+    "premium": true,
+    "email": "wowo@gmail.com",
+    "password": "3ferfdew",
+    "fav_genres": ["adventure", "comedy"]},
+
+ {"name": "Werr Wulf",
+    "premium": true,
+    "email": "eooe@gmail.com",
+    "password": "gergew",
+    "fav_genres": ["action", "comedy"]}
+]
