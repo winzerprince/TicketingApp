@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./UserDashBoard.css";
+import "./NowPlaying.css";
 
 function UserDashBoard() {
   const navigate = useNavigate();
@@ -8,9 +9,8 @@ function UserDashBoard() {
     <>
       <div className="dashboard">
         <header className="header">
-          <h1>MOVIETIX</h1>
           <nav className="nav">
-            <ul>
+            <ul className="NavBar">
               <li>
                 <a href="/">Home</a>
               </li>
@@ -29,10 +29,19 @@ function UserDashBoard() {
                 </button>
               </li>
               <li>
-                <a href="/search">Search</a>
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder="Search Movies..."
+                />
+              </li>
+              <li>
+                <input type="button" value="SignIn" />
               </li>
             </ul>
           </nav>
+          <h1 className="appName">MOVIETIX</h1>
         </header>
 
         <main className="main-content">
@@ -45,6 +54,53 @@ function UserDashBoard() {
             <button className="get-tickets-btn">Get Tickets</button>
           </section>
         </main>
+        <nav>
+          <ul className="Genres">
+            <li>
+              <a href="/All">All Movies</a>
+            </li>
+            <li>
+              <a href="/Action">Action</a>
+            </li>
+            <li>
+              <a href="/Comedy">Comedy</a>
+            </li>
+            <li>
+              <a href="/Drama">Drama</a>
+            </li>
+            <li>
+              <a href="/Horror">Horror</a>
+            </li>
+            <li>
+              <a href="/Sci-Fi">Sci-Fi</a>
+            </li>
+          </ul>
+        </nav>
+        <div className="container">
+          <div className="leftColumn">
+            <h1 className="heading">Now Playing</h1>
+
+            <ul className="movieList">
+              <li>
+                <strong>THE DARK KNIGHT</strong>
+              </li>
+              <li>
+                <strong>PULP FICTION</strong>
+              </li>
+              <li>
+                <strong>THE MATRIX</strong>
+              </li>
+              <li>
+                <strong>INTERSTELLAR</strong>
+              </li>
+            </ul>
+          </div>
+          <div className="bottom">
+            <div className="moviesWatched">Movies Watched 12</div>
+            <br />
+            <div className="totalSpent">Total spent $245</div>
+          </div>
+        </div>
       </div>
     </>
   );
