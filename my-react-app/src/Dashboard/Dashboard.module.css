@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     font-family: Arial, sans-serif;
-
+    /* max-height: 900px; */
 }
 
 body {
@@ -34,9 +34,10 @@ body {
 }
 
 .leftBarSection :is(a) {
-    margin: 0pc;
+    margin: 0px;
     text-decoration: none;
-    color: black
+    color: rgb(22, 21, 21);
+    font-size: 20px;
 }
 
 .leftBarSection a:hover {
@@ -65,7 +66,7 @@ body {
     height: 150px;
     box-shadow: 1px 1px 2px 2px rgb(196, 193, 193);
     border-radius: 5px;
-    margin: 5px;
+    margin: 5px 10px;
     background-color: whitesmoke
 }
 
@@ -84,4 +85,5 @@ body {
     color: green;
     padding: 5px 8px;
     background-color: whitesmoke;
+    margin: 5px 10px;
 }

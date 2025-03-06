@@ -99,7 +99,7 @@ function Dashboard() {
             <br />
             <br />
             <br />
-            User Iformation 1
+            User Information 1
           </div>
           <div className={styles.middle}>
             <Calendar />
@@ -108,7 +108,7 @@ function Dashboard() {
             <br />
             <br />
             <br />
-            User Iformation 3
+            User Information 3
           </div>
         </section>
       </main>
