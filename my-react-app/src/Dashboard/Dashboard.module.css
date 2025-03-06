@@ -2,11 +2,10 @@
     display: flex;
     flex-direction: row;
     font-family: Arial, sans-serif;
-
 }
 
 body {
-    background-color: rgba(255, 255, 255, 0.932);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .icon {
@@ -20,7 +19,7 @@ body {
     color: black(248, 242, 242);
     border: none;
     margin-left: 0pc;
-    transition: (background-color) 10ms;
+    transition: (background-color) 100ms;
     border-radius: 5px;
     font-size: 1.045rem;
     min-width: 200px;
@@ -34,7 +33,7 @@ body {
 }
 
 .leftBarSection :is(a) {
-    margin: 0pc;
+    margin: 0px;
     text-decoration: none;
     color: black
 }
@@ -42,8 +41,9 @@ body {
 .leftBarSection a:hover {
     color: blueviolet;
     cursor: pointer;
-    scale: 1.05;
-    background-color: rgba(248, 248, 255, 0.11)
+    scale: 1.10;
+    background-color: rgba(248, 248, 255, 0.11);
+    transition: 0.3s ease-in-out;
 }
 
 .sidebarHeading {
@@ -51,13 +51,14 @@ body {
     background-color: rgb(161, 173, 184);
     color: black;
     text-align: center;
-    padding: 8px 0px;
+    padding: 8px;
     font-size: 1.3rem;
     font-weight: bold;
     border-radius: 300px;
-    margin-top: 20px;
+    /*margin-top: 20px;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 10px;*/
+    margin: 20px 10px 10px; /* shorthand */
 }
 
 .upper,
@@ -65,14 +66,15 @@ body {
     height: 150px;
     box-shadow: 1px 1px 2px 2px rgb(196, 193, 193);
     border-radius: 5px;
-    margin: 5px;
-    background-color: whitesmoke
+    margin: 3px 4px; /* modified this for alignment with the calendar */
+    background-color: whitesmoke;
 }
 
 .rightSection {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex: 1;
+    max-height: 580px;
 }
 
 .middle {
@@ -84,4 +86,6 @@ body {
     color: green;
     padding: 5px 8px;
     background-color: whitesmoke;
+    margin: 3px 4px;
 }
+

@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Open_Sans/static/OpenSans-Bold.ttf') format('truetype');
+	/* font-weight: bolder; */
+	/* font-style: oblique; */
+}
+
+.root-layout {
+	max-height: 700px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+header nav {
+	display: flex;
+	gap: 10px;
+	background-color: rgb(255, 255, 255);
+	max-width: 100%;
+	padding: 5px;
+	justify-content: end;
+	margin: 0;
+	align-items: center;
+	max-height: 50px;
+}
+
+header nav a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	background-color: hsl(211, 100%, 50%);
+	padding: 5px 15px;
+	border-radius: 15px;
+	font: 1.4em "Roboto";
+}
+
+header nav a.active {
+	background-color: hsl(31, 100%, 40%);
+}
+header nav h1 {
+	margin-right: auto;
+	color: hsl(211, 100%, 50%);
+	font: 25px Roboto;
+}	
+
+main {
+	flex: 1;
+	padding: 2rem;
+}
+
+.footer {
+	margin-top: 60vh;
+	padding: 1rem;
+	text-align: right;
+	color: blanchedalmond;
+	font-size: 25px;
+}

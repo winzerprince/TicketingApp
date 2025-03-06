@@ -34,7 +34,7 @@ import Calendar from "../Calendar.jsx"
 
 function Dashboard() {
     return (<>
-        <hr />
+        {/* <hr /> */}
         <main className={styles.dashboard}>
             <section className={styles.leftBarSection}>
                 <div className={styles.sidebarHeading}>
@@ -60,14 +60,14 @@ function Dashboard() {
             <section className={styles.rightSection}>
                 <div className={styles.upper}>
                     <br /><br /><br />
-                    User Iformation 1
+                    User Information 1
                 </div>
                 <div className={styles.middle}>
                     <Calendar />
                 </div>
                 <div className={styles.lower}>
                     <br /><br /><br />
-                    User Iformation 3
+                    User Information 3
                 </div>
 
             </section>

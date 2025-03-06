@@ -1,0 +1,9 @@
+body {
+    /* position: relative; */
+    background: url("/ticket_back.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    /* backdrop-filter: blur(px); */
+    /* background-color: grayscale(0.5); */
+}
