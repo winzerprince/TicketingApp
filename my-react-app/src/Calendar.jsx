@@ -14,7 +14,6 @@ function Calendar() {
                 end: "dayGridMonth,timeGridWeek,timeGridDay"
             }
             }
-            height={"auto"}
         />
     </div>)
 }
