@@ -1,4 +1,4 @@
-
+import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./UserDashBoard.css";
 import "./NowPlaying.css";
@@ -12,16 +12,16 @@ function UserDashBoard() {
           <nav className="nav">
             <ul className="NavBar">
               <li>
-                <a href="/">Home</a>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <a href="/movies">Movies</a>
+                <NavLink href="/movies">Movies</NavLink>
               </li>
               <li>
-                <a href="/book-online">Book Online</a>
+                <NavLink href="/book-online">Book Online</NavLink>
               </li>
               <li>
-                <a href="/theaters">Theaters</a>
+                <NavLink href="/theaters">Theaters</NavLink>
               </li>
               <li>
                 <button onClick={() => navigate("/Dashboard")}>
@@ -37,7 +37,7 @@ function UserDashBoard() {
                 />
               </li>
               <li>
-                <input type="button" value="SignIn" />
+                <input type="button" value="SignIn" id="signin"/>
               </li>
             </ul>
           </nav>
