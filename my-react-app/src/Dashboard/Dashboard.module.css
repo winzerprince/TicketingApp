@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgba(255, 255, 255, 0.932);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .icon {
@@ -83,8 +83,9 @@ body {
     box-shadow: 1px 1px 2px 2px rgb(196, 193, 193);
     font-size: 0.8rem;
     height: 300px;
-    color: green;
     padding: 5px 8px;
-    background-color: whitesmoke;
+    background-color: hsl(0, 0%, 52%);
     margin: 5px 10px;
+    color: hsl(210, 5%, 8%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
