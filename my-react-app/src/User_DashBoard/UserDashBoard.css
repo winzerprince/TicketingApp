@@ -1,0 +1,124 @@
+.dashboard {
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+  background-color: rgb(8, 4, 31);
+  min-height: 100vh;
+}
+
+h1.appName {
+  text-align: center;
+  font-size: 10em;
+  background: linear-gradient(to right, cyan, purple, pink);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+li {
+  padding: 20px;
+}
+
+.NavBar li:last-child {
+  margin-left: auto;
+}
+
+input {
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(46, 14, 46);
+  border-style: none;
+  color: bisque;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+input:hover {
+  color: aqua;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.nav .NavBar a.active {
+  color: brown;
+}
+
+a:hover {
+  font-size: 1.6em;
+  color: aqua;
+  transition: 0.4s ease-in-out;
+}
+
+
+
+button {
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+button:hover {
+  font-weight: bolder;
+  transition: 0.4s ease-in-out;
+  background-color: hsl(7, 14%, 89%);
+  color: hsl(0, 75%, 62%);
+}
+
+section.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2,
+p {
+  color: beige;
+}
+
+.get-tickets-btn {
+  width: 10em;
+  height: 3em;
+  font-size: larger;
+  border-style: none;
+  border-radius: 30px;
+  color: aliceblue;
+  background-color: blue;
+  margin: 40px;
+}
+
+.Genres {
+  display: flex;
+  justify-content: flex-start;
+  border: 2px rgb(255, 255, 255) solid;
+}
+
+.Genres a {
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.Genres ul li {
+  background-color: purple;
+}
+
+#signin {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px  20px;
+  cursor: pointer;
+  transition: 0.6s ease;
+}

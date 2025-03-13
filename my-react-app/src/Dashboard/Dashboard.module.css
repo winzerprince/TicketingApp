@@ -1,0 +1,91 @@
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, sans-serif;
+    /* max-height: 900px; */
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.icon {
+    width: 20px;
+    margin-bottom: -5px;
+    margin-right: 5px;
+}
+
+.leftBarSection {
+    background: gainsboro;
+    color: black(248, 242, 242);
+    border: none;
+    margin-left: 0pc;
+    transition: (background-color) 10ms;
+    border-radius: 5px;
+    font-size: 1.045rem;
+    min-width: 200px;
+    margin-right: 10px;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    column-gap: 12px;
+    box-shadow: 0px 1px 2px;
+}
+
+.leftBarSection :is(a) {
+    margin: 0px;
+    text-decoration: none;
+    color: rgb(22, 21, 21);
+    font-size: 20px;
+}
+
+.leftBarSection a:hover {
+    color: blueviolet;
+    cursor: pointer;
+    scale: 1.05;
+    background-color: rgba(248, 248, 255, 0.11)
+}
+
+.sidebarHeading {
+    border: none;
+    background-color: rgb(161, 173, 184);
+    color: black;
+    text-align: center;
+    padding: 8px 0px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 300px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.upper,
+.lower {
+    height: 150px;
+    box-shadow: 1px 1px 2px 2px rgb(196, 193, 193);
+    border-radius: 5px;
+    margin: 5px 10px;
+    background-color: whitesmoke;
+    flex: 1;
+}
+
+.rightSection {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.middle {
+    overflow: scroll;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 2px rgb(196, 193, 193);
+    font-size: 0.8rem;
+    height: 300px;
+    padding: 5px 8px;
+    background-color: hsl(0, 0%, 52%);
+    margin: 5px 10px;
+    color: hsl(210, 5%, 8%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
